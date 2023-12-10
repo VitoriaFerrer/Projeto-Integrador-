@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Escola Mundo Encantado</title>
+	<meta charset="utf-8" />
+	<meta name="author" content="Vitoria Ferreira e Luis Fernando" />
+	<meta name="keywords" content="Escola Mundo Encantado, atividades, crianças, estimular, passo a passo, Pedagogicas" />
+	<meta name="description"
+	content="O Site foi criado no intuito de fazer uma apresentação da Escola Mundo Encantado com abas explicativas e interativas" />
+
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+</head> 
+
+    <body>
+        <header>
+	       <img src="img/escola.png"/><br>
+	    </header>
+        <nav>
+			<a class="a-menu" href="index.html">HOME</a>
+			<a class="a-menu" href="index.html#pag-institucional">INSTITUCIONAL</a>
+			<a class="a-menu" href="index.html#pag-atividades">ATIVIDADES</a>
+			<a class="a-menu" href="index.html#pag-assistencia">ASSISTENCIA</a>
+			<a class="a-menu" href="#"></a>
+	    </nav>
+
+        <section id="pag-contato">
+    		<h1>ENTRE EM CONTATO CONOSCO</h1>
+
+    		<p>Agende um horário para tirar suas dúvidas!</p>
+    		
+        <form name="" method="" action="">
+        	<label for="nome">Nome:</label>
+        	<input id="nome" type="text" name="nome_completo" placeholder="Digite seu nome completo" required autofocus/>
+
+        	<label for="email">E-mail</label>
+        	<input id="email" type="email" name="email" placeholder="nomeusuario@email.com"/>
+
+        	<label for="celular">Celular:</label>
+        	<input id="celular" type="tel" name="celular" placeholder="(99)99999-9999" pattern="^\(?\d{2}\)\d{5}[-\d{4}.*?$"/>
+
+            <div id="data-hora-num">
+                <div>
+                	<label for="data">Data:</label>
+                	<input id="data" type="date" name="data"/>
+                </div>
+
+                <div>
+                	<label for="hora">Hora:</label>
+                	<input id="hora" type="time" name="hora"/>
+                </div>
+            </div>
+
+        	<label for="categoria">Categoria:</label><br/>
+        	<select id="categoria" name="categoria">
+        		<option>Selecione</option>
+        		<option value="mae">Mãe/Pai</option>
+        		<option value="pai">Responsável</option>	
+        	</select>
+
+        	<fieldset>
+        		<legend>Gênero:</legend>
+        		<input id="masc" type="radio" name="genero" value="masc"><label for="masc">Masculino</label><br/>
+        		<input id="fem" type="radio" name="genero" value="fem"><label for="fem">Feminino</label>
+        	</fieldset>
+
+        	<fieldset>
+        		<legend>Atividades ofertadas:</legend>
+        		<input id="inte" type="checkbox" name="atividade" value="integral"><label for="">Período integral</label><br/>
+        		<input id="parc" type="checkbox" name="atividade" value="parcial"><label for="">Período parcial</label><br/>
+        		<input id="psic" type="checkbox" name="atividade" value="psicomotricidade"><label for="">Psicomotriciddae</label><br/>
+        		<input id="ingl" type="checkbox" name="atividade" value="ingles"><label for="">Aulas de inglês</label><br/>
+        	</fieldset>
+
+        	<label for="msg">Mensagem</label><br/>
+        	<textarea id="msg" cols="52" rows="4">
+        	</textarea>
+
+            <div id="botoes-form">
+            <input type="submit" name="bnt-agendar" value="AGENDAR">
+            <input type="reset" name="btn-cancelar" value="CANCELAR">
+            </div>
+        </form>
+    </section>
+
+    <footer>
+		<p>Desenvolvido por <a href="https://www.instagram.com/emeescola/"
+				target="_blank"><b>Vitória Ferreira e Luis Fernando</b></a> - 2023</p>
+    </footer>
+</body>
+
+</html>
